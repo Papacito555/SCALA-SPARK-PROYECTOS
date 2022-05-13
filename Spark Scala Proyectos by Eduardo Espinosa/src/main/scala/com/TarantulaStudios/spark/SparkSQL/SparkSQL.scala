@@ -20,7 +20,7 @@ object SparkSQL {
     // Set the log level to only print errors
     Logger.getLogger("org").setLevel(Level.ERROR)
 
-    // Use new SparkSession interface in Spark 2.0
+    // Use new SparkSession interface in Spark 2.0.0
     val spark = SparkSession
       .builder
       .appName("SparkSQL")
