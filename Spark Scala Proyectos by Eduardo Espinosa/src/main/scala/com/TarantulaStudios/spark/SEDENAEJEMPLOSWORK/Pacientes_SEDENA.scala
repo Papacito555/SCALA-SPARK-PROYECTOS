@@ -329,7 +329,7 @@ object Pacientes_SEDENA {
     val Suki = spark.sql("SELECT P.expediente, curp,nombre, apellidopaterno, apellidomaterno, fechanacimiento, matricula, paparentesco FROM PACIENTES as P INNER JOIN MILITARES AS M ON P.expediente == M.expediente WHERE M.matricula =='CONFIDENCIAL'")
       .withColumn("paparentesco",par($"paparentesco"))
 
-    //M.papacientematricula =='D0281660' AND
+   
 
     val Sonic = spark.sql("SELECT P.expediente, curp,nombre, apellidopaterno, apellidomaterno, fechanacimiento, matricula, paparentesco FROM PACIENTES as P INNER JOIN MILITARES AS M ON P.expediente == M.expediente WHERE M.matricula =='CONFIDENCIAL'")
       .withColumn("paparentesco",par($"paparentesco"))
